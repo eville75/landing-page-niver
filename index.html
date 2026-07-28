@@ -805,9 +805,9 @@
     var plano = document.querySelector('input[name="plano"]:checked').value;
     var sugestao = document.getElementById('f-sugestao').value.trim();
 
-    var texto = "Oii!" + nome + "aqui" (" + numero + ").\n" +
-                "Quero falar sobre: " + plano + "\n" +
-                "Sugestão: " + sugestao;
+    var texto = "Oii! " + nome + " aqui (" + numero + ").\n" +
+          "Quero falar sobre: " + plano + "\n" +
+          "Sugestão: " + sugestao;
 
     var url = "https://wa.me/5563984033061?text=" + encodeURIComponent(texto);
 
