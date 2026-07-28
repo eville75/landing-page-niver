@@ -776,9 +776,9 @@
         <div class="field">
           <label>Sobre qual plano?</label>
           <div class="radio-row">
-            <label class="radio-opt"><input type="radio" name="plano" value="Plano 1 — Dia inteiro" checked> Plano 1</label>
-            <label class="radio-opt"><input type="radio" name="plano" value="Plano 2 — Jantar de domingo"> Plano 2</label>
-            <label class="radio-opt"><input type="radio" name="plano" value="Esquenta de sábado"> Esquenta</label>
+            <label class="radio-opt"><input type="radio" name="plano" value="Plano — Dia inteiro" checked> Plano 1</label>
+            <label class="radio-opt"><input type="radio" name="plano" value="Cardápio - almoço"> Plano 2</label>
+            <label class="radio-opt"><input type="radio" name="plano" value="Cardápio - jantar"> Plano 3</label>
             <label class="radio-opt"><input type="radio" name="plano" value="Geral"> Geral</label>
           </div>
         </div>
@@ -805,9 +805,9 @@
     var plano = document.querySelector('input[name="plano"]:checked').value;
     var sugestao = document.getElementById('f-sugestao').value.trim();
 
-    var texto = "Olá! Sou " + nome + " (" + numero + ").\n" +
-                "Sobre: " + plano + "\n" +
-                "Sugestão de mudança: " + sugestao;
+    var texto = "Oii!" + nome + "aqui" (" + numero + ").\n" +
+                "Quero falar sobre: " + plano + "\n" +
+                "Sugestão: " + sugestao;
 
     var url = "https://wa.me/5563984033061?text=" + encodeURIComponent(texto);
 
